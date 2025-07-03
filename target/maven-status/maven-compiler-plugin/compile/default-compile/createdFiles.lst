@@ -1,2 +1,5 @@
 com\amigopay\events\PaymentInitiatedEvent.class
+com\amigopay\events\PaymentDoneEvent.class
+com\amigopay\events\enums\PaymentStatus.class
+com\amigopay\events\PaymentRejectedEvent.class
 com\amigopay\events\UserCreatedEvent.class

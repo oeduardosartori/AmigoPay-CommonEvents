@@ -1,18 +1,20 @@
 package com.amigopay.events;
 
+import com.amigopay.events.enums.PaymentStatus;
+
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 /**
- * Represents the request to initiate a payment between two wallets.
- * Issued by payment-service and consumed by wallet-service to process the transfer.
+ * Represents confirmation that a payment was made successfully.
  */
 
-public record PaymentInitiatedEvent(
+public record PaymentDoneEvent(
         UUID paymentId,
         UUID payerId,
         UUID payeeId,
         BigDecimal amount,
-        LocalDateTime timestamp
+        PaymentStatus status,
+        LocalDateTime processedAt
 ) { }

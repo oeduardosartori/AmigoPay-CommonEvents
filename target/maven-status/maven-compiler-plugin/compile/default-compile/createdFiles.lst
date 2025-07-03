@@ -1,1 +1,2 @@
+com\amigopay\events\PaymentInitiatedEvent.class
 com\amigopay\events\UserCreatedEvent.class
